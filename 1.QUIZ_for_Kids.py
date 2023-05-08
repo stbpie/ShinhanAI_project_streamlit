@@ -6,17 +6,12 @@ Created on Fri May  5 16:43:40 2023
 """
 # 유형부분 집계 추가 완료
 import pandas as pd
-import numpy as np
 import requests
 from bs4 import BeautifulSoup as bs
-import time
-import random
 import os
 import openai
 import streamlit as st
-import openai_secret_manager
 import re
-from IPython.display import display
 
 page_no = "1"
 url = f"https://sgsg.hankyung.com/sgplus/quiz?page={page_no}"
